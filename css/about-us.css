@@ -1,0 +1,282 @@
+/* ===== <?includes> ============================================= */
+/* ===== <?fonts> ============================================= */
+/* ===== <?colors> ============================================= */
+/* ===== <?etc> ============================================= */
+@-webkit-keyframes next {
+  0%, 100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  5% {
+    -webkit-transform: translate(-50%, -3px);
+            transform: translate(-50%, -3px);
+  }
+  25% {
+    -webkit-transform: translate(-50%, 11px);
+            transform: translate(-50%, 11px);
+  }
+  30%, 95% {
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px);
+  }
+}
+@keyframes next {
+  0%, 100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  5% {
+    -webkit-transform: translate(-50%, -3px);
+            transform: translate(-50%, -3px);
+  }
+  25% {
+    -webkit-transform: translate(-50%, 11px);
+            transform: translate(-50%, 11px);
+  }
+  30%, 95% {
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px);
+  }
+}
+@-webkit-keyframes subtitle_line {
+  0%, 85%, 100% {
+    width: 0;
+  }
+  10%, 50% {
+    width: 30px;
+  }
+}
+@keyframes subtitle_line {
+  0%, 85%, 100% {
+    width: 0;
+  }
+  10%, 50% {
+    width: 30px;
+  }
+}
+@-webkit-keyframes marquee {
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@keyframes marquee {
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/* ===== <?about_us> ============================================= */
+.about-us {
+  padding: 60px 0 90px 0;
+}
+.about-us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-us__content_1 {
+  margin: 0 0 15px 0;
+}
+.about-us__content_1 .about-us__picture {
+  -webkit-transform: translateX(77px);
+          transform: translateX(77px);
+}
+.about-us__content_2 .about-us__picture {
+  -webkit-transform: translateX(-107px);
+          transform: translateX(-107px);
+}
+.about-us__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about-us__title {
+  font-family: "Gotham";
+  font-weight: 900;
+  font-size: 48px;
+  color: #f0f0f0;
+  padding: 0 0 20px 0;
+  margin: 0 0 18px 0;
+  position: relative;
+}
+.about-us__title:before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: #48a5a5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.about-us__text {
+  max-width: 760px;
+  margin: 0 0 20px 0;
+}
+.about-us__text:last-child {
+  margin: 0;
+}
+
+/* ===== <?our_team> ============================================= */
+.our-team {
+  padding: 70px 0 115px 0;
+  background: #20242c;
+}
+.our-team__title {
+  margin: 0;
+}
+.our-team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.our-team__slider {
+  width: 1346px;
+  overflow: hidden;
+}
+.our-team__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.our-team__arrow:hover {
+  background: #24282f;
+}
+.our-team__arrow img {
+  height: 18px;
+  -webkit-transform: translate(-1px, 0);
+          transform: translate(-1px, 0);
+}
+.our-team__arrow-prev {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0;
+}
+.our-team__arrow-next {
+  -webkit-transform: translate(0, -50%) rotate(180deg);
+          transform: translate(0, -50%) rotate(180deg);
+  right: 0;
+}
+.our-team__arrow-next img {
+  -webkit-transform: translate(-2px, 0);
+          transform: translate(-2px, 0);
+}
+
+.our-team-slide {
+  background: #24282f;
+  -webkit-box-shadow: 0 0 25px rgba(7, 8, 13, 0.25);
+          box-shadow: 0 0 25px rgba(7, 8, 13, 0.25);
+  border-radius: 35px;
+  padding: 30px 40px;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  opacity: 0.6;
+  -webkit-transition: 550ms ease-in-out 100ms;
+  transition: 550ms ease-in-out 100ms;
+}
+.our-team-slide__picture {
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+.our-team-slide__picture img {
+  width: 100%;
+  border-radius: 20px;
+}
+.our-team-slide__name {
+  font-family: "Gotham";
+  font-weight: 500;
+  font-size: 24px;
+  color: #f0f0f0;
+  margin: 0 0 20px 0;
+}
+.our-team-slide__characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.our-team-slide.swiper-slide-prev {
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+.our-team-slide.swiper-slide-next {
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.our-team-slide.swiper-slide-next, .our-team-slide.swiper-slide-prev {
+  -webkit-transition: 350ms ease-in-out 50ms;
+  transition: 350ms ease-in-out 50ms;
+  cursor: pointer;
+}
+.our-team-slide.swiper-slide-next:hover, .our-team-slide.swiper-slide-prev:hover {
+  opacity: 0.8;
+}
+.our-team-slide.swiper-slide-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.our-team-slide-character {
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-team-slide-character:last-child {
+  margin: 0;
+}
+.our-team-slide-character__picture {
+  margin: 0 15px 0 0;
+}
+.our-team-slide-character__picture img {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+.our-team-slide-character__body {
+  font-family: "Gotham";
+  opacity: 0.65;
+  color: #f0f0f0;
+}
+.our-team-slide-character__name {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}

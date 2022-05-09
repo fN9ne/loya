@@ -1,0 +1,32 @@
+@keyframes next {
+	0%, 100% {
+		transform: translate(-50%, 0);
+	}
+	5% {
+		transform: translate(-50%, -3px);
+	}
+	25% {
+		transform: translate(-50%, 11px);
+	}
+	30%, 95% {
+		transform: translate(-50%, 8px);
+	}
+}
+@keyframes subtitle_line {
+	0%, 85%, 100% {
+		width: 0;
+	}
+	10%, 50% {
+		width: 30px;
+	}
+}
+@keyframes marquee {
+	to {
+		transform: translateX(-50%);
+	}
+}
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}

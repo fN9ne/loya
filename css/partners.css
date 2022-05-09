@@ -1,0 +1,98 @@
+/* ===== <?includes> ============================================= */
+/* ===== <?fonts> ============================================= */
+/* ===== <?colors> ============================================= */
+/* ===== <?etc> ============================================= */
+@-webkit-keyframes next {
+  0%, 100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  5% {
+    -webkit-transform: translate(-50%, -3px);
+            transform: translate(-50%, -3px);
+  }
+  25% {
+    -webkit-transform: translate(-50%, 11px);
+            transform: translate(-50%, 11px);
+  }
+  30%, 95% {
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px);
+  }
+}
+@keyframes next {
+  0%, 100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  5% {
+    -webkit-transform: translate(-50%, -3px);
+            transform: translate(-50%, -3px);
+  }
+  25% {
+    -webkit-transform: translate(-50%, 11px);
+            transform: translate(-50%, 11px);
+  }
+  30%, 95% {
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px);
+  }
+}
+@-webkit-keyframes subtitle_line {
+  0%, 85%, 100% {
+    width: 0;
+  }
+  10%, 50% {
+    width: 30px;
+  }
+}
+@keyframes subtitle_line {
+  0%, 85%, 100% {
+    width: 0;
+  }
+  10%, 50% {
+    width: 30px;
+  }
+}
+@-webkit-keyframes marquee {
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@keyframes marquee {
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/* ===== <?partners_screen> ============================================= */
+.partners {
+  padding: 80px 0 0 0;
+}
+.partners__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -40px;
+}
+
+.partner {
+  margin: 0 40px 80px;
+}
+.partner img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 350ms ease-in-out 50ms;
+  transition: 350ms ease-in-out 50ms;
+  cursor: pointer;
+}
+.partner:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}

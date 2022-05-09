@@ -1,0 +1,29 @@
+/* ===== <?includes> ============================================= */
+@import 'variables';
+@import 'keyframes';
+/* ===== <?partners_screen> ============================================= */
+.partners {
+	padding: 80px 0 0 0;
+	// &__container {}
+	// &__top {}
+	// &__title {}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -40px;
+	}
+}
+.partner {
+	margin: 0 40px 80px;
+	img {
+		filter: grayscale(1);
+		transition: $trn;
+		cursor: pointer;
+	}
+	&:hover{
+		img {
+			filter: grayscale(0);
+		}
+	}
+}

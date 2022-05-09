@@ -1,0 +1,85 @@
+/* ===== <?includes> ============================================= */
+@import 'variables';
+@import 'keyframes';
+/* ===== <?contacts> ============================================= */
+.info {
+	padding: 80px 0 65px 0;
+	// &__container {}
+	// &__top {}
+	// &__title {}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 80px 0;
+	}
+	&__text-block {
+		max-width: 746px;
+		width: 100%;
+	}
+	&__row {
+		display: flex;
+		margin: 0 0 100px 0;
+		&:last-child{
+			margin: 0;
+		}
+	}
+	&__box {
+		display: flex;
+		flex: 0 0 410px;
+	}
+	&__caption {
+		font-weight: 700;
+		font-size: 24px;
+		color: $white;
+		position: relative;
+	}
+	&__line {
+		flex: 1 1 auto;
+		height: 2px;
+		background: $cyan;
+		margin: 11px 30px 0;
+	}
+	&__stat {
+		p {
+			max-width: 305px;
+			margin: 0 0 10px 0;
+			&:last-child{
+				margin: 0;
+			}
+		}
+		a {
+			color: $white;
+			font-family: $font2;
+			line-height: 1.5;
+			font-size: 16px;
+			transition: $trn;
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+	}
+	&__map {
+		flex: 1 1 auto;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.info-socials {
+	display: flex;
+	margin: 0 -20px;
+	&__item {
+		margin: 0 20px;
+	}
+	&__link {
+		font-family: $font2;
+		font-weight: 700;
+		color: $white;
+		opacity: 0.5;
+		transition: $trn;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
